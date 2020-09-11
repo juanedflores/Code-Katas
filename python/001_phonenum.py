@@ -26,9 +26,6 @@ def create_phone_number(n):
     return phonenum
 
 
-create_phone_number([1, 2, 3, 4, 5, 6, 7, 8, 9, 0])
-
-
 # Top Solution - using str.format()
 def create_phone_number1(n):
     return "({}{}{}) {}{}{}-{}{}{}{}".format(*n)
@@ -58,7 +55,7 @@ def create_phone_number3(n):
 
 print(create_phone_number([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]))
 
-# Things learned:
+# What I learned:
 # * str.format to enter values inside a string,
 # * enumerate() to iterate without needing to use a counter variable.
 # * how to use the map() function and convert numbers to string using the built-in str() function as the passed in function.
