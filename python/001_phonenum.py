@@ -34,9 +34,6 @@ def create_phone_number1(n):
     return "({}{}{}) {}{}{}-{}{}{}{}".format(*n)
 
 
-create_phone_number1([1, 2, 3, 4, 5, 6, 7, 8, 9, 0])
-
-
 # Solution with enumerate()
 def create_phone_number2(n):
     phone = ""
@@ -48,11 +45,21 @@ def create_phone_number2(n):
         elif index == 6:
             phone += "-"
         phone += str(c)
-    print(phone)
+    return phone
 
 
-create_phone_number2([1, 2, 3, 4, 5, 6, 7, 8, 9, 0])
+# Solution with join(), map() and old string formatting.
+def create_phone_number3(n):
+    # applying the str() function to each number.
+    n = ''.join(map(str, n))
+    # using old string formatting, and using the indices of the string as parameters.
+    return '(%s) %s-%s' % (n[:3], n[3:6], n[6:])
+
+
+print(create_phone_number([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]))
 
 # Things learned:
-# str.format to enter values inside a string,
-# enumerate() to iterate without needing to use a counter variable.
+# * str.format to enter values inside a string,
+# * enumerate() to iterate without needing to use a counter variable.
+# * how to use the map() function and convert numbers to string using the built-in str() function as the passed in function.
+# * learned "old Style" string formatting using the % operator.
