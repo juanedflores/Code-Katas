@@ -31,7 +31,7 @@ def get_count1(inputStr):
 print(get_count("abracadabra"))
 
 # What I learned:
-# How to use the 'in' keyword with an if statement to check if a char matches any chars of a given string.
-# Using the sum() function.
-# Using generator functions.
-# list comprehensions and generator comprehensions
+# * How to use the 'in' keyword with an if statement to check if a char matches any chars of a given string.
+# * Using the sum() function.
+# * Using generator functions.
+# * list comprehensions and generator comprehensions
