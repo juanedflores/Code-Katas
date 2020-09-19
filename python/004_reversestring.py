@@ -13,7 +13,14 @@ def solution(string):
 def solution1(s): return s[::-1]
 
 
-print(solution("world"))
+# Solution using reverse method
+def solution2(string):
+    temp = list(string)
+    temp.reverse()
+    return ''.join(temp)
+
+
+print(solution2("world"))
 
 # What I learned:
 # * The pass keyword, as a placeholder for future code.
